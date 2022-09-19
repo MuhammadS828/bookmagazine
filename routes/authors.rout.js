@@ -1,9 +1,9 @@
 const { Router } = require("express");
-const { authorControllers } = require("../controllers/author.controllers");
+const { authorsControllers } = require("../controllers/authors.controllers");
 
 const router = Router();
 
-router.post("/author", authorControllers.addAuthors);
-router.delete("/author", authorControllers.deleteAuthors);
+router.post("/authors", authorsControllers.addAuthors);
+router.delete("/authors", authorsControllers.deleteAuthors);
 
 module.exports = router;

@@ -1,5 +1,5 @@
 const Author = require("../models/Author.model");
-module.exports.authorControllers = {
+module.exports.authorsControllers = {
   addAuthors: async (req, res) => {
     const { name, discraption } = req.body;
     try {
